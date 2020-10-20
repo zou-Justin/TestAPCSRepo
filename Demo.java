@@ -10,11 +10,8 @@ public static void printLoop(int n){
 }
 
   public static void main(String[] args){
-    if (args.length > 0){
-    printLoop(3);
-    }
-    else{
-      printLoop(5);
+    if (args.length == 0){
+    printLoop(5);
     }
   }
 }
