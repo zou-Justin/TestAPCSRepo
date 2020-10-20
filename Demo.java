@@ -13,5 +13,6 @@ public static void printLoop(int n){
     if (args.length == 0){
     printLoop(5);
     }
+    else {printLoop(Integer.parseInt(args[0]));}
   }
 }
