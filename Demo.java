@@ -50,7 +50,7 @@ public static int[][] create2DArray(int rows, int cols, int maxValue){
 }
 public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue){
   int[][]arr = new int[rows][];
-  for (int i = 0; i < rows; i ++){
+  for (int i = 0; i < rows; i++){
     arr[i] = new int[(int) Math.round(Math.random() * cols)];
 
     for (int j = 0; j < ((int) Math.round(Math.random() * cols)); j++){
