@@ -34,16 +34,16 @@ public static String arrayDeepToString(int[][]arr){
   for (int i = 0;i < arr.length;i++){
     newStr1 += arrToString(arr[i]) + ", ";
   }
-  for (int j = 0; j < newStr1.length()-2;j++){
+  for (int j = 0; j < newStr1.length();j++){
     actualStr1 += newStr1.substring(j,j+1);
   }
   return actualStr1 + "}";
 }
 public static int[][] create2DArray(int rows, int cols, int maxValue){
   int[][]Arr = new int[rows][cols];
-  for (int i = 0; i < rows; i++){
-    for (int j = 0; j < cols; j++){
-    Arr[i][j] = (int) Math.round(Math.random() * maxValue);
+  for (int i = 0; i < rows;i++){
+    for (int j = 0; j < cols;j++){
+    Arr[i][j] = (int)Math.round(Math.random() * maxValue);
     }
   }
   return Arr;
@@ -52,9 +52,8 @@ public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue){
   int[][]arr = new int[rows][];
   for (int i = 0; i < rows; i++){
     arr[i] = new int[(int) Math.round(Math.random() * cols)];
-
-    for (int j = 0; j < (int)Math.round(Math.random() * cols) -1; j++){
-    arr[i][j] = (int) Math.round(Math.random() * maxValue);
+    for (int j = 0; j < (int) Math.round(Math.random() * cols)-2; j++){
+    arr[i][j] = (int)Math.round(Math.random() * maxValue);
     }
   }
   return arr;
