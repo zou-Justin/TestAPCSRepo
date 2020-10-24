@@ -64,3 +64,4 @@ public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue){
     }
     else {printLoop(Integer.parseInt(args[0]));}
   }
+}
