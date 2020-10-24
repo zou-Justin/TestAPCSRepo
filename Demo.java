@@ -34,7 +34,7 @@ public static String arrayDeepToString(int[][]arr){
   for (int i = 0;i < arr.length;i++){
     newStr1 += arrToString(arr[i]) + ", ";
   }
-  for (int j = 0; j < newStr1.length();j++){
+  for (int j = 0; j < newStr1.length()-2;j++){
     actualStr1 += newStr1.substring(j,j+1);
   }
   return actualStr1 + "}";
